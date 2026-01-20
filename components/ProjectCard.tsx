@@ -1,5 +1,7 @@
 import Link from 'next/link'
 
+type ProjectCategory = 'blog' | 'paper' | 'project'
+
 interface ProjectCardProps {
   title: string
   description: string
@@ -7,6 +9,13 @@ interface ProjectCardProps {
   link: string
   external?: boolean
   isComingSoon?: boolean
+  category?: ProjectCategory
+}
+
+const categoryConfig: Record<ProjectCategory, { label: string; color: string; bgColor: string }> = {
+  blog: { label: 'Blog', color: '#6b9bd1', bgColor: 'rgba(107, 155, 209, 0.15)' },
+  paper: { label: 'Paper', color: '#a78bda', bgColor: 'rgba(167, 139, 218, 0.15)' },
+  project: { label: 'Project', color: '#7bc47f', bgColor: 'rgba(123, 196, 127, 0.15)' },
 }
 
 export default function ProjectCard({
@@ -16,11 +25,25 @@ export default function ProjectCard({
   link,
   external = false,
   isComingSoon = false,
+  category,
 }: ProjectCardProps) {
   const content = (
-    <div className={`p-6 bg-surface rounded-lg border border-surface hover:border-accent transition-all ${!isComingSoon ? 'cursor-pointer' : ''}`}>
+    <div className={`p-6 bg-surface rounded-lg border border-surface hover:border-accent transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-accent/10 ${!isComingSoon ? 'cursor-pointer' : ''}`}>
       <div className="flex justify-between items-start mb-3">
-        <h3 className="text-xl font-semibold text-text-primary">{title}</h3>
+        <div className="flex items-center gap-3">
+          {category && (
+            <span
+              className="px-2 py-0.5 text-xs font-medium rounded"
+              style={{
+                color: categoryConfig[category].color,
+                backgroundColor: categoryConfig[category].bgColor,
+              }}
+            >
+              {categoryConfig[category].label}
+            </span>
+          )}
+          <h3 className="text-xl font-semibold text-text-primary">{title}</h3>
+        </div>
         {isComingSoon && (
           <span className="px-3 py-1 text-xs bg-accent/20 text-accent rounded-full">
             Coming Soon

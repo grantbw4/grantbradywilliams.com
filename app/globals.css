@@ -6,8 +6,30 @@
   body {
     @apply bg-background text-text-primary antialiased;
   }
-  
+
   a {
     @apply text-accent hover:text-accent-hover transition-colors;
   }
+}
+
+/* Gold shimmer animation for hero heading */
+@keyframes gold-shimmer {
+  0% {
+    text-shadow: 0 0 0 transparent;
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(212, 165, 116, 0.4), 0 0 40px rgba(212, 165, 116, 0.2);
+  }
+  100% {
+    text-shadow: 0 0 0 transparent;
+  }
+}
+
+.hero-heading {
+  transition: all 0.3s ease;
+}
+
+.hero-heading:hover {
+  color: #d4a574;
+  animation: gold-shimmer 1.5s ease-in-out infinite;
 }
