@@ -3,17 +3,19 @@ import ProjectCard from '@/components/ProjectCard'
 
 export default function Home() {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-20">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
       {/* Hero Section */}
-      <section className="mb-32">
-        <h1 className="text-5xl font-bold mb-8 leading-tight">
+      <section className="mb-16 sm:mb-32">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 leading-tight">
           <span className="hero-heading inline-block cursor-default">Hi! I'm Grant Brady Williams!</span>
         </h1>
-        <p className="text-2xl text-text-secondary mb-8 leading-relaxed">
-          Data scientist at the intersection of<br />
+        <p className="text-lg sm:text-xl md:text-2xl text-text-secondary mb-6 sm:mb-8 leading-relaxed">
+          Data scientist at the intersection of
+          <span className="hidden sm:inline"><br /></span>
+          <span className="sm:hidden"> </span>
           econometrics, statistics, and machine learning.
         </p>
-        <div className="flex gap-6 items-center">
+        <div className="flex flex-wrap gap-4 sm:gap-6 items-center">
           <a
             href="https://www.linkedin.com/in/grantbradywilliams/"
             target="_blank"
@@ -41,10 +43,10 @@ export default function Home() {
 
       {/* Featured Projects */}
       <section>
-        <h2 className="text-3xl font-bold mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12">
           <span className="hero-heading inline-block cursor-default">Featured Work</span>
         </h2>
-        <div className="grid gap-8">
+        <div className="grid gap-6 sm:gap-8">
           <ProjectCard
             title="2026 Midterms Forecast"
             description="Building a statistical model to forecast the 2026 U.S. midterm elections. Weekly updates on methodology, polling data analysis, and predictions. Coming Spring 2026."
@@ -78,7 +80,7 @@ export default function Home() {
             category="project"
           />
         </div>
-        <div className="mt-12 text-center">
+        <div className="mt-8 sm:mt-12 text-center">
           <Link
             href="/projects"
             className="inline-block px-6 py-3 bg-surface hover:bg-accent hover:text-background transition-all duration-300 rounded-md hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-0.5"

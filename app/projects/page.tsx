@@ -101,15 +101,15 @@ export default function Projects() {
   ]
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-20">
-      <h1 className="text-4xl font-bold mb-4">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
+      <h1 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4">
         <span className="hero-heading inline-block cursor-default">Portfolio</span>
       </h1>
-      <p className="text-xl text-text-secondary mb-12">
+      <p className="text-lg sm:text-xl text-text-secondary mb-8 sm:mb-12">
         A collection of data science problems I've tackled, research papers I've written, and side projects I've worked on.
       </p>
-      
-      <div className="grid gap-6">
+
+      <div className="grid gap-4 sm:gap-6">
         {projects.map((project) => (
           <ProjectCard
             key={project.title}

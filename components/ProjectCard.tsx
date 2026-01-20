@@ -28,9 +28,9 @@ export default function ProjectCard({
   category,
 }: ProjectCardProps) {
   const content = (
-    <div className={`p-6 bg-surface rounded-lg border border-surface hover:border-accent transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-accent/10 ${!isComingSoon ? 'cursor-pointer' : ''}`}>
-      <div className="flex justify-between items-start mb-3">
-        <div className="flex items-center gap-3">
+    <div className={`p-4 sm:p-6 bg-surface rounded-lg border border-surface hover:border-accent transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-accent/10 ${!isComingSoon ? 'cursor-pointer' : ''}`}>
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-0 mb-3">
+        <div className="flex flex-wrap items-center gap-2 sm:gap-3">
           {category && (
             <span
               className="px-2 py-0.5 text-xs font-medium rounded"
@@ -42,25 +42,27 @@ export default function ProjectCard({
               {categoryConfig[category].label}
             </span>
           )}
-          <h3 className="text-xl font-semibold text-text-primary">{title}</h3>
+          <h3 className="text-lg sm:text-xl font-semibold text-text-primary">{title}</h3>
         </div>
-        {isComingSoon && (
-          <span className="px-3 py-1 text-xs bg-accent/20 text-accent rounded-full">
-            Coming Soon
-          </span>
-        )}
-        {external && !isComingSoon && (
-          <svg className="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-          </svg>
-        )}
+        <div className="flex items-center gap-2">
+          {isComingSoon && (
+            <span className="px-3 py-1 text-xs bg-accent/20 text-accent rounded-full">
+              Coming Soon
+            </span>
+          )}
+          {external && !isComingSoon && (
+            <svg className="w-5 h-5 text-text-secondary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          )}
+        </div>
       </div>
-      <p className="text-text-secondary mb-4">{description}</p>
+      <p className="text-sm sm:text-base text-text-secondary mb-4">{description}</p>
       <div className="flex flex-wrap gap-2">
         {tags.map((tag) => (
           <span
             key={tag}
-            className="px-3 py-1 text-sm bg-background text-text-secondary rounded-md"
+            className="px-2 sm:px-3 py-1 text-xs sm:text-sm bg-background text-text-secondary rounded-md"
           >
             {tag}
           </span>
