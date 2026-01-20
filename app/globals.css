@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-text-primary antialiased;
+  }
+  
+  a {
+    @apply text-accent hover:text-accent-hover transition-colors;
+  }
+}
