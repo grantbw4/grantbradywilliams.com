@@ -49,7 +49,7 @@ export default function Home() {
         <div className="grid gap-6 sm:gap-8">
           <ProjectCard
             title="2026 Midterms Forecast"
-            description="Building a statistical model to forecast the 2026 U.S. midterm elections. Weekly updates on methodology, polling data analysis, and predictions. Coming Spring 2026."
+            description="Building a Bayesian Hierarchical Model model to forecast the 2026 U.S. midterm elections. Weekly updates on methodology, polling data analysis, and predictions. Coming Spring 2026."
             tags={['Python', 'R', 'Statistical Modeling', 'Political Data Science']}
             link="#"
             isComingSoon={true}
