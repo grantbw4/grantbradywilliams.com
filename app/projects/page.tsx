@@ -4,7 +4,7 @@ export default function Projects() {
   const projects = [
     {
       title: "2026 Midterms Forecast",
-      description: "Building a statistical model to forecast the 2026 U.S. midterm elections using polling data, economic indicators, and historical trends. Weekly methodology updates and predictions.",
+      description: "Building a Bayesian Hierarchical Model to forecast the 2026 U.S. midterm elections using polling data, economic indicators, and historical trends. Weekly methodology updates and predictions.",
       tags: ["Python", "R", "Statistical Modeling", "Political Data Science"],
       link: "#",
       isComingSoon: true,
