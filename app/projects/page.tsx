@@ -90,14 +90,6 @@ export default function Projects() {
       external: true,
       category: "project" as const,
     },
-    {
-      title: "Youth Suicide Rates Dashboard",
-      description: "Interactive Shiny dashboard visualizing youth suicide rates across the United States, featuring chloropleth maps, time series analysis, and demographic breakdowns.",
-      tags: ["R", "Shiny", "Data Visualization", "Public Health"],
-      link: "https://p2d7zj-grantbw4.shinyapps.io/project_draft/",
-      external: true,
-      category: "project" as const,
-    },
   ]
 
   return (

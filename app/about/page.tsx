@@ -72,10 +72,10 @@ export default function About() {
         </h2>
 
         <p>
-          When I'm not working with data, you can find me running, at CrossFit, or hiking.
-          I'm a huge music fan and am probably reading a Pitchfork album review right now.
-          I also love audiobooks, writing, and trying out new restaurants—send me your favorite
-          Mexican spots in San Francisco!
+        When I'm not working with data, I'm probably running, at CrossFit, or out on a hike.
+        I'm also a huge music fan—odds are good I'm reading a Pitchfork album review right now—and
+        I love audiobooks, writing, and exploring new restaurants. If you know a great Mexican
+        spot in San Francisco, I want to hear about it!
         </p>
         
         <h2 className="text-xl sm:text-2xl font-semibold text-text-primary mt-8 sm:mt-12 mb-4 sm:mb-6">
