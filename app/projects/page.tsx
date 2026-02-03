@@ -1,13 +1,23 @@
 import ProjectCard from '@/components/ProjectCard'
 
+interface Project {
+  title: string
+  description: string
+  tags: string[]
+  link: string
+  external?: boolean
+  isComingSoon?: boolean
+  category?: 'blog' | 'paper' | 'project'
+}
+
 export default function Projects() {
-  const projects = [
+  const projects: Project[] = [
     {
       title: "2026 Midterms Forecast",
-      description: "Building a Bayesian Hierarchical Model to forecast the 2026 U.S. midterm elections using polling data, economic indicators, and historical trends. Weekly methodology updates and predictions.",
-      tags: ["Python", "R", "Statistical Modeling", "Political Data Science"],
-      link: "#",
-      isComingSoon: true,
+      description: "Built a Bayesian Hierarchical Model to forecast the 2026 U.S. midterm elections using polling data, economic indicators, and historical outcomes.",
+      tags: ["Python", "PyMC", "R", "Statistical Modeling", "Political Data Science"],
+      link: "https://grantbw4.github.io/2026-midterms-forecast/",
+      external: true,
       category: "blog" as const,
     },
     {

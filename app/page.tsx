@@ -49,10 +49,10 @@ export default function Home() {
         <div className="grid gap-6 sm:gap-8">
           <ProjectCard
             title="2026 Midterms Forecast"
-            description="Building a Bayesian Hierarchical Model model to forecast the 2026 U.S. midterm elections. Weekly updates on methodology, polling data analysis, and predictions. Coming Spring 2026."
-            tags={['Python', 'R', 'Statistical Modeling', 'Political Data Science']}
-            link="#"
-            isComingSoon={true}
+            description="Built a Bayesian Hierarchical Model to forecast the 2026 U.S. midterm elections using polling data, economic indicators, and historical outcomes."
+            tags={['Python', 'PyMC', 'R', 'Statistical Modeling', 'Political Data Science']}
+            link="https://grantbw4.github.io/2026-midterms-forecast/"
+            external={true}
             category="blog"
           />
           <ProjectCard
