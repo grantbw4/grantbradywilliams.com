@@ -1,4 +1,18 @@
 import ProjectCard from '@/components/ProjectCard'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Portfolio',
+  description: 'Data science projects, research papers, and side projects by Grant Brady Williams. Includes election forecasting, economic mobility research, and machine learning applications.',
+  alternates: {
+    canonical: '/projects',
+  },
+  openGraph: {
+    title: 'Portfolio | Grant Brady Williams',
+    description: 'Data science projects, research papers, and side projects by Grant Brady Williams. Includes election forecasting, economic mobility research, and machine learning applications.',
+    url: '/projects',
+  },
+}
 
 interface Project {
   title: string

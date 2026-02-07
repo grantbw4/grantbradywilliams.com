@@ -1,4 +1,18 @@
 import Image from 'next/image'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About',
+  description: 'Data scientist at Tesla with a background in econometrics and statistics from Harvard. Previously at Walmart, the Federal Reserve Bank of Dallas, and the Committee for a Responsible Federal Budget.',
+  alternates: {
+    canonical: '/about',
+  },
+  openGraph: {
+    title: 'About | Grant Brady Williams',
+    description: 'Data scientist at Tesla with a background in econometrics and statistics from Harvard. Previously at Walmart, the Federal Reserve Bank of Dallas, and the Committee for a Responsible Federal Budget.',
+    url: '/about',
+  },
+}
 
 export default function About() {
   return (
