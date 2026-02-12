@@ -56,6 +56,14 @@ export default function Home() {
             category="blog"
           />
           <ProjectCard
+            title="Rotten Tomatoes & Box Office Revenue"
+            description="Regression discontinuity analysis investigating whether Rotten Tomatoes' Fresh/Rotten classification causally influences box office performance in the post-COVID era, using 621 wide releases from 2021–2026."
+            tags={['R', 'Causal Inference', 'Regression Discontinuity', 'Data Visualization']}
+            link="https://grantbw4.github.io/Regression_Discontinuity_RT/"
+            external={true}
+            category="blog"
+          />
+          <ProjectCard
             title="2024 Presidential Election Blog"
             description="Weekly forecasting blog analyzing the 2024 presidential election using polling data, economic indicators, and historical trends. Built with R and deployed as a static site."
             tags={['R', 'Statistical Modeling', 'Data Visualization', 'Forecasting']}
