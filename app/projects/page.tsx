@@ -36,7 +36,7 @@ export default function Projects() {
     },
     {
       title: "Do Handheld Device Bans Save Lives?",
-      description: "Staggered difference-in-differences analysis estimating the causal effect of primary enforcement handheld device laws on U.S. traffic fatalities (2010–2022). Implements TWFE, Goodman-Bacon decomposition, and the Callaway & Sant'Anna estimator to find a precisely estimated null result.",
+      description: "Staggered difference-in-differences analysis estimating the causal effect of primary enforcement handheld device laws on U.S. traffic fatalities (2010–2022). Implements TWFE, Goodman-Bacon decomposition, and the Callaway & Sant'Anna estimator.",
       tags: ["Python", "Causal Inference", "Difference-in-Differences", "Panel Data", "Policy Evaluation"],
       link: "https://grantbw4.github.io/texting-ban-did/",
       external: true,
