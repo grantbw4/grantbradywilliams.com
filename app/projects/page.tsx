@@ -27,6 +27,14 @@ interface Project {
 export default function Projects() {
   const projects: Project[] = [
     {
+      title: "Rite",
+      description: "A writing-first social network built around a simple constraint: one post per day, shared only with people who follow each other back.",
+      tags: ["Next.js", "Product Design", "Full Stack"],
+      link: "https://rite-eta.vercel.app/",
+      external: true,
+      category: "project" as const,
+    },
+    {
       title: "2026 Midterms Forecast",
       description: "Built a Bayesian Hierarchical Model to forecast the 2026 U.S. midterm elections using polling data, economic indicators, and historical outcomes.",
       tags: ["Python", "PyMC", "R", "Statistical Modeling", "Political Data Science"],

@@ -86,7 +86,7 @@ export default function About() {
         </h2>
 
         <p>
-        When I'm not working with data, I'm probably running, at CrossFit, or out on a hike.
+        When I'm not working with data, I'm probably running or out on a hike.
         I'm also a huge music fan—odds are good I'm reading a Pitchfork album review right now—and
         I love audiobooks, writing, and exploring new restaurants. If you know a great Mexican
         spot in San Francisco, I want to hear about it!
