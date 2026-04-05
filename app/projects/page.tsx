@@ -28,7 +28,7 @@ export default function Projects() {
   const projects: Project[] = [
     {
       title: "Rite",
-      description: "A writing-first social network built around a simple constraint: one post per day, shared only with people who follow each other back.",
+      description: "A writing-first social networking app built around a simple constraint: one post per day, shared only with people who follow each other back.",
       tags: ["Next.js", "Product Design", "Full Stack"],
       link: "https://rite-eta.vercel.app/",
       external: true,
