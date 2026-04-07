@@ -56,8 +56,8 @@ export default function About() {
         <p>
           That thread—using rigorous quantitative methods to understand behavior and inform
           decisions—runs through everything I've done since. I've built causal inference pipelines on Walmart's Economist
-          Team under Professor John List, researched banking surveys at the Federal Reserve Bank
-          of Dallas, and analyzed fiscal policy at the Committee for a Responsible Federal Budget.
+          Team under Professor John List, analyzed banking surveys at the Federal Reserve Bank
+          of Dallas, and drafted fiscal policy briefings with the Committee for a Responsible Federal Budget.
         </p>
 
         <h2 className="text-xl sm:text-2xl font-semibold text-text-primary mt-8 sm:mt-12 mb-4 sm:mb-6">
@@ -65,20 +65,9 @@ export default function About() {
         </h2>
 
         <p>
-          Now, I'm a data scientist at Tesla working on demand and capacity forecasting. I'm
+          Now, I'm a data scientist at Tesla using applied ML to build demand and capacity forecasts for infrastructure planning. I'm
           passionate about the environment and believe deeply in leveraging technology to
           accelerate sustainable abundance for all.
-        </p>
-
-        <h2 className="text-xl sm:text-2xl font-semibold text-text-primary mt-8 sm:mt-12 mb-4 sm:mb-6">
-          <span className="hero-heading inline-block cursor-default">What I'm Working On</span>
-        </h2>
-
-        <p>
-          Currently, I'm building a statistical model to forecast the 2026 U.S. midterm elections,
-          combining polling data, economic indicators, and historical trends. This project builds
-          on my 2024 presidential election forecasting work and represents an ongoing exploration
-          of political data science and probabilistic modeling.
         </p>
 
         <h2 className="text-xl sm:text-2xl font-semibold text-text-primary mt-8 sm:mt-12 mb-4 sm:mb-6">

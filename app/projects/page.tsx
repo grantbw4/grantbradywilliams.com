@@ -27,12 +27,12 @@ interface Project {
 export default function Projects() {
   const projects: Project[] = [
     {
-      title: "Rite",
-      description: "A writing-first social networking app built around a simple constraint: one post per day, shared only with people who follow each other back.",
-      tags: ["Next.js", "Product Design", "Full Stack"],
-      link: "https://rite-eta.vercel.app/",
+      title: "Senior Thesis with Professor Raj Chetty",
+      description: "Harvard Statistics Department senior thesis under Professor Raj Chetty and Matthew Staiger exploring the spatial relationship between Latter-day Saint adherence, upward mobility, and social capital using areal interpolation and spatial regression models. Sample available here; email me for full access.",
+      tags: ["Spatial Statistics", "R", "Social Capital", "Economic Mobility"],
+      link: "https://drive.google.com/file/d/1usLG2Rx_HCd5rbTRvsgQsT3cCtX73kE4/view?usp=sharing",
       external: true,
-      category: "project" as const,
+      category: "paper" as const,
     },
     {
       title: "2026 Midterms Forecast",
@@ -51,14 +51,6 @@ export default function Projects() {
       category: "blog" as const,
     },
     {
-      title: "Rotten Tomatoes & Box Office Revenue",
-      description: "Regression discontinuity analysis investigating whether Rotten Tomatoes' Fresh/Rotten classification causally influences box office performance in the post-COVID era, using 621 wide releases from 2021–2026.",
-      tags: ["R", "Causal Inference", "Regression Discontinuity", "Data Visualization"],
-      link: "https://grantbw4.github.io/Regression_Discontinuity_RT/",
-      external: true,
-      category: "blog" as const,
-    },
-    {
       title: "2024 Presidential Election Blog",
       description: "Weekly forecasting blog analyzing the 2024 presidential election. Built with R, featuring data visualizations, polling analysis, and probabilistic predictions.",
       tags: ["R", "Statistical Modeling", "Data Visualization", "Forecasting"],
@@ -67,18 +59,26 @@ export default function Projects() {
       category: "blog" as const,
     },
     {
-      title: "Senior Thesis with Professor Raj Chetty",
-      description: "Harvard Statistics Department senior thesis under Professor Raj Chetty and Matthew Staiger exploring the spatial relationship between Latter-day Saint adherence, upward mobility, and social capital using areal interpolation and spatial regression models. Sample available here; email me for full access.",
-      tags: ["Spatial Statistics", "R", "Social Capital", "Economic Mobility"],
-      link: "https://drive.google.com/file/d/1usLG2Rx_HCd5rbTRvsgQsT3cCtX73kE4/view?usp=sharing",
-      external: true,
-      category: "paper" as const,
-    },
-    {
       title: "Blurtle",
       description: "A timed word-guessing game with unlimited guesses. Like Wordle but with a twist. Built with vanilla JavaScript and deployed on GitHub Pages.",
       tags: ["JavaScript", "HTML/CSS", "Game Development"],
       link: "https://grantbw4.github.io/blurtle/",
+      external: true,
+      category: "project" as const,
+    },
+    {
+      title: "Rotten Tomatoes & Box Office Revenue",
+      description: "Regression discontinuity analysis investigating whether Rotten Tomatoes' Fresh/Rotten classification causally influences box office performance in the post-COVID era, using 621 wide releases from 2021–2026.",
+      tags: ["R", "Causal Inference", "Regression Discontinuity", "Data Visualization"],
+      link: "https://grantbw4.github.io/Regression_Discontinuity_RT/",
+      external: true,
+      category: "blog" as const,
+    },
+    {
+      title: "Rite",
+      description: "A writing-first social networking app built around a simple constraint: one post per day, shared only with people who follow each other back.",
+      tags: ["Next.js", "Product Design", "Full Stack"],
+      link: "https://rite-eta.vercel.app/",
       external: true,
       category: "project" as const,
     },
