@@ -41,7 +41,7 @@ export default function About() {
         <p>
           I graduated Magna Cum Laude with High Honors from Harvard, double concentrating in
           Statistics and Economics. My time there shaped how I think about using data to
-          understand human behavior and solve real problems—whether that's predicting elections,
+          understand human behavior and solve real problems, whether that's predicting elections,
           understanding what drives economic mobility, or figuring out why people do (or don't)
           act on their values.
         </p>
@@ -54,8 +54,8 @@ export default function About() {
         </p>
 
         <p>
-          That thread—using rigorous quantitative methods to understand behavior and inform
-          decisions—runs through everything I've done since. I've built causal inference pipelines on Walmart's Economist
+          That thread, using rigorous quantitative methods to understand behavior and inform
+          decisions, runs through everything I've done since. I've built causal inference pipelines on Walmart's Economist
           Team under Professor John List, analyzed banking surveys at the Federal Reserve Bank
           of Dallas, and drafted fiscal policy briefings with the Committee for a Responsible Federal Budget.
         </p>
