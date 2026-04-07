@@ -48,12 +48,12 @@ export default function Home() {
         </h2>
         <div className="grid gap-6 sm:gap-8">
           <ProjectCard
-            title="Rite"
-            description="A writing-first social networking app built around a simple constraint: one post per day, shared only with people who follow each other back."
-            tags={['Next.js', 'Product Design', 'Full Stack']}
-            link="https://rite-eta.vercel.app/"
+            title="Senior Thesis with Professor Raj Chetty"
+            description="Harvard Statistics Department senior thesis under Professor Raj Chetty and Matthew Staiger exploring the spatial relationship between Latter-day Saint adherence, upward mobility, and social capital. Sample available here; email me for full access."
+            tags={['Spatial Statistics', 'R', 'Social Capital', 'Economic Mobility']}
+            link="https://drive.google.com/file/d/1usLG2Rx_HCd5rbTRvsgQsT3cCtX73kE4/view?usp=sharing"
             external={true}
-            category="project"
+            category="paper"
           />
           <ProjectCard
             title="2026 Midterms Forecast"
@@ -64,10 +64,10 @@ export default function Home() {
             category="blog"
           />
           <ProjectCard
-            title="Rotten Tomatoes & Box Office Revenue"
-            description="Regression discontinuity analysis investigating whether Rotten Tomatoes' Fresh/Rotten classification causally influences box office performance in the post-COVID era, using 621 wide releases from 2021–2026."
-            tags={['R', 'Causal Inference', 'Regression Discontinuity', 'Data Visualization']}
-            link="https://grantbw4.github.io/Regression_Discontinuity_RT/"
+            title="Do Handheld Device Bans Save Lives?"
+            description="Staggered difference-in-differences analysis estimating the causal effect of primary enforcement handheld device laws on U.S. traffic fatalities (2010–2022). Implements TWFE, Goodman-Bacon decomposition, and the Callaway & Sant'Anna estimator."
+            tags={['Python', 'Causal Inference', 'Difference-in-Differences', 'Panel Data', 'Policy Evaluation']}
+            link="https://grantbw4.github.io/texting-ban-did/"
             external={true}
             category="blog"
           />
@@ -78,14 +78,6 @@ export default function Home() {
             link="https://grantbw4.github.io/election-blog/"
             external={true}
             category="blog"
-          />
-          <ProjectCard
-            title="Senior Thesis with Professor Raj Chetty"
-            description="Harvard Statistics Department senior thesis under Professor Raj Chetty and Matthew Staiger exploring the spatial relationship between Latter-day Saint adherence, upward mobility, and social capital. Sample available here; email me for full access."
-            tags={['Spatial Statistics', 'R', 'Social Capital', 'Economic Mobility']}
-            link="https://drive.google.com/file/d/1usLG2Rx_HCd5rbTRvsgQsT3cCtX73kE4/view?usp=sharing"
-            external={true}
-            category="paper"
           />
           <ProjectCard
             title="Blurtle"
