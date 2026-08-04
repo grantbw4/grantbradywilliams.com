@@ -35,6 +35,14 @@ export default function Projects() {
       category: "paper" as const,
     },
     {
+      title: "Teaching Six Agents to Play Literature",
+      description: "Reinforcement learning study of the card game Literature, where teammates cannot talk and the only channel between them is the question they ask out loud. Five independent training runs per arm, measured on held-out deals, plus a three-part test for whether the agents invented a signaling convention. They did not.",
+      tags: ["Python", "PyTorch", "Reinforcement Learning", "PPO", "Multi-Agent", "Neuro-Symbolic"],
+      link: "https://grantbw4.github.io/literature-rl/",
+      external: true,
+      category: "blog" as const,
+    },
+    {
       title: "2026 Midterms Forecast",
       description: "Built a Bayesian Hierarchical Model to forecast the 2026 U.S. midterm elections using polling data, economic indicators, and historical outcomes.",
       tags: ["Python", "PyMC", "R", "Statistical Modeling", "Political Data Science"],
