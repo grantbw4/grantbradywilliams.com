@@ -75,14 +75,6 @@ export default function Projects() {
       category: "blog" as const,
     },
     {
-      title: "Rite",
-      description: "A writing-first social networking app built around a simple constraint: one post per day, shared only with people who follow each other back.",
-      tags: ["Next.js", "Product Design", "Full Stack"],
-      link: "https://rite-eta.vercel.app/",
-      external: true,
-      category: "project" as const,
-    },
-    {
       title: "Social Capital and Psychological Well-Being",
       description: "Final paper for Professor Matthew Basilico's course, Economics of Mental Health and Homelessness, exploring the relationship between social capital and psychological well-being.",
       tags: ["Economics", "Mental Health", "Research"],
